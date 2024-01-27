@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hero">
+        <p class="logo">Find Jesus</p>
+        <p class="credit"></p>
+    </div>
+
+    <div class="form">
+        <div class="description"> 
+            <h1>Are you a sinner who doesn't want to spend all eternity in hell? Let Jesus Christ save you today.</h1>
+
+            <h2>Sign up <b>now!</b></h2>
+        </div>
+        <form id="info">
+            <div class="entry">
+                <input type="text" name="first" id="first" placeholder="First name" required />
+                <label for="first">First name</label>
+            </div>
+            <div class="entry">
+                <input type="text" name="last" id="last" placeholder="Last name" />
+                <label for="last">Last name</label>
+            </div>
+            <div class="entry">
+                <input type="email" name="email" id="email" placeholder="Email" required />
+                <label for="email">Email</label>
+                <span class="email-error"></span>
+            </div>
+            <div class="entry">
+                <input type="tel" name="phone" id="phone" placeholder="Phone number" pattern="^\(?1?\d{3}\)?[\-\.\s]?\d{3}[\-\.\s]?\d{4}$" required/>
+                <label for="phone">Phone Number</label>
+                <span class="phone-error"></span>
+            </div>
+            <div class="entry">
+                <input type="password" name="pass" id="pass"  placeholder="Password" pattern=".{8,}" required />
+                <label for="pass">Password</label>
+                <span class="pass-error"></span>
+            </div>
+            <div class="entry">
+                <input type="password" name="confirmation" id="confirmation" placeholder="Confirm password" required />
+                <label for="confirmation">Confirm password</label>
+                <span class="confirmation-error"></span>
+            </div>
+            <div class="signup-button">
+                <input name="submit" type="submit" id="submit" class="submit" value="Sign up!">
+                <p>Already have an account? <a>Log in</a></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
